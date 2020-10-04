@@ -50,6 +50,21 @@ INSERT INTO Enrollments VALUES(4, 6);
 INSERT INTO Enrollments VALUES(5, 6);
 INSERT INTO Enrollments VALUES(6, 6);
 
+INSERT INTO Enrollments VALUES(2, 1);
+INSERT INTO Enrollments VALUES(2, 3);
+INSERT INTO Enrollments VALUES(2, 5);
+INSERT INTO Enrollments VALUES(2, 7);
+INSERT INTO Enrollments VALUES(2, 8);
+INSERT INTO Enrollments VALUES(2, 9);
+INSERT INTO Enrollments VALUES(2, 11);
+INSERT INTO Enrollments VALUES(2, 12);
+INSERT INTO Enrollments VALUES(2, 13);
+INSERT INTO Enrollments VALUES(2, 14);
+INSERT INTO Enrollments VALUES(2, 15);
+
+
+
+
 INSERT INTO Projects VALUES(1, 'proj1');
 INSERT INTO Projects VALUES(2, 'proj2');
 INSERT INTO Projects VALUES(3, 'proj3');

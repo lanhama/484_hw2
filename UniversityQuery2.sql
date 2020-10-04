@@ -42,7 +42,7 @@ WHERE PID=(
     SELECT PID
     FROM Members
     WHERE "SID"=(
-        SELECT DISTINCT S."SID"
+        SELECT DISTINCT "SID"
         FROM Enrollments E
         NATURAL JOIN Students S
         NATURAL JOIN Courses C

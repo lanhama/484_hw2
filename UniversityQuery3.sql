@@ -1,5 +1,6 @@
 CREATE VIEW Classes AS
-SELECT * FROM Enrollments
+SELECT *
+FROM Enrollments
 NATURAL JOIN Courses;
 
 SELECT DISTINCT "SID"
@@ -37,13 +38,12 @@ AND
         AND "SID"=S."SID"
     )
 )
-OR (
+OR
     EXISTS (
         SELECT * FROM Classes
         WHERE C_Name="EECS281"
         AND "SID"=S."SID"
     )
-)
 ORDER BY SID;
 
 DROP VIEW Classes;
