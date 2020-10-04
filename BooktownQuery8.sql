@@ -9,4 +9,5 @@ FROM
     Books
 GROUP BY Author_ID
 HAVING COUNT(*) = 3
-);
+)
+ORDER BY E.Publisher_ID DESC;

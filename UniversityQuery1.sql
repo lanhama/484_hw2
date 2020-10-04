@@ -3,5 +3,5 @@ FROM Enrollments
     NATURAL JOIN Students
     NATURAL JOIN Courses
 GROUP BY CID
-HAVING SUM(case Major when 'CS' then 0 else 1 end) < 10
+HAVING SUM(CASE Major WHEN 'CS' THEN 0 ELSE 1 END) < 10
 ORDER BY CID DESC;

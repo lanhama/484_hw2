@@ -10,15 +10,14 @@ AS
         INNER JOIN Authors A ON B.Author_ID=A.Author_ID
     WHERE A.First_Name='J. K.' AND A.Last_Name='Rowling';
 
-    SELECT Author_ID, Last_Name, First_Name
+    SELECT DISTINCT Author_ID, Last_Name, First_Name
     FROM Authors
 MINUS
     SELECT DISTINCT A.Author_ID, A.Last_Name, A.First_Name
-    FROM Books B, Authors A
+    FROM JK_BOOKS B, Authors A
     WHERE NOT EXISTS (SELECT *
     FROM Books
-    WHERE Subject_ID IN (SELECT *
-        FROM JK_BOOKS) AND Author_ID=A.Author_ID)
-    ORDER BY Last_Name ASC, Author_ID DESC;
+    WHERE Subject_ID=B.Subject_ID AND Author_ID=A.Author_ID)
+ORDER BY Last_Name ASC, Author_ID DESC;
 
 DROP VIEW JK_BOOKS;
