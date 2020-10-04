@@ -1,0 +1,6 @@
+#!/bin/bash
+set -x
+
+rm -rf var/4842.sqlite3
+sqlite3 var/4842.sqlite3 < BuildBooktown.sql
+sqlite3 var/4842.sqlite3 < BooktownQuery8.sql
