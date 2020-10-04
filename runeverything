@@ -1,0 +1,7 @@
+#!/bin/bash
+set -x
+
+rm -rf var/484.sqlite3
+sqlite3 var/484.sqlite3 < createdb.sql
+sqlite3 var/484.sqlite3 < insertdata.sql
+sqlite3 var/484.sqlite3 < UniversityQuery4.sql
