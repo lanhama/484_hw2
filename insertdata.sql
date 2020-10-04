@@ -50,11 +50,11 @@ INSERT INTO Enrollments VALUES(4, 6);
 INSERT INTO Enrollments VALUES(5, 6);
 INSERT INTO Enrollments VALUES(6, 6);
 
-INSERT INTO Projects VALUES(1, "proj1");
-INSERT INTO Projects VALUES(2, "proj2");
-INSERT INTO Projects VALUES(3, "proj3");
-INSERT INTO Projects VALUES(4, "proj4");
-INSERT INTO Projects VALUES(5, "proj5");
+INSERT INTO Projects VALUES(1, 'proj1');
+INSERT INTO Projects VALUES(2, 'proj2');
+INSERT INTO Projects VALUES(3, 'proj3');
+INSERT INTO Projects VALUES(4, 'proj4');
+INSERT INTO Projects VALUES(5, 'proj5');
 
 INSERT INTO Members VALUES(1, 1);
 INSERT INTO Members VALUES(1, 2);
