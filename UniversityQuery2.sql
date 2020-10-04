@@ -29,6 +29,6 @@ EXISTS (SELECT *
     EXISTS (SELECT *
     FROM
         Members
-    WHERE SID=S.SID AND PID=M.PID)
+    WHERE SID=S.SID AND PID=M.PID);
 
 
