@@ -36,7 +36,6 @@ INSERT INTO Enrollments VALUES(8, 6);
 INSERT INTO Enrollments VALUES(12, 7);
 INSERT INTO Enrollments VALUES(9, 8);
 INSERT INTO Enrollments VALUES(1, 9);
-INSERT INTO Enrollments VALUES(2, 10);
 INSERT INTO Enrollments VALUES(11, 11);
 INSERT INTO Enrollments VALUES(7, 2);
 INSERT INTO Enrollments VALUES(8, 2);
@@ -54,6 +53,9 @@ INSERT INTO Enrollments VALUES(2, 1);
 INSERT INTO Enrollments VALUES(2, 3);
 INSERT INTO Enrollments VALUES(2, 5);
 INSERT INTO Enrollments VALUES(2, 7);
+
+INSERT INTO Enrollments VALUES(2, 10);
+
 INSERT INTO Enrollments VALUES(2, 8);
 INSERT INTO Enrollments VALUES(2, 9);
 INSERT INTO Enrollments VALUES(2, 11);
