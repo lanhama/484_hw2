@@ -58,4 +58,4 @@ S1.SID != S2.SID AND
     FROM
         Members
     WHERE SID=S2.SID AND PID=M.PID)
-    ORDER BY S1.Name DESC;
+ORDER BY S1.Name DESC;
