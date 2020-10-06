@@ -1,7 +1,7 @@
 CREATE VIEW Students_taking_classes
 AS
     SELECT DISTINCT S2.SID
-    FROM Students S2
+    FROM Students
     WHERE EXISTS
         (SELECT *
         FROM Enrollments
@@ -26,7 +26,7 @@ EXISTS (SELECT *
     WHERE PID=M.PID AND SID != S.SID AND SID IN (
         SELECT SID
         FROM Students_taking_classes
-)
+    )
 )
     AND
     EXISTS (SELECT *
@@ -34,7 +34,7 @@ EXISTS (SELECT *
         Members
     WHERE SID=S.SID AND PID=M.PID);
 
--- DROP VIEW Students_taking_classes;
+DROP VIEW Students_taking_classes;
 
 
 -- SELECT DISTINCT S.SID, S.Name
