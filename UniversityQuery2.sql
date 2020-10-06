@@ -1,7 +1,7 @@
 CREATE VIEW Students_taking_classes
 AS
     SELECT DISTINCT S2.SID
-    FROM Students
+    FROM Students S2
     WHERE EXISTS
         (SELECT *
         FROM Enrollments
